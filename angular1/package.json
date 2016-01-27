@@ -1,0 +1,11 @@
+{
+  "name":         "angular1",
+  "version":      "0.0.1",
+  "description":  "Plumbing happens here",
+  "main"  :       "server.js",
+  "dependencies": {
+    "express": "*",
+    "font-awesome": "*",
+    "angular-route": "1.4.x"
+  }
+}
