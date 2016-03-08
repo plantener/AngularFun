@@ -1,35 +1,39 @@
 <html>
 
-  <head>
-     <base href="/"> <!-- Used to support pustState (html5 style URL) -->
-    <title>Angular 2 Tour-of-heroes</title>
+<head>
+  <base href="/"> <!-- Used to support pustState (html5 style URL) -->
+  <title>Angular 2 Tour-of-heroes</title>
 
-    <!-- 1. Load libraries -->
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/rxjs/bundles/Rx.js"></script>
-    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
-    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
 
-    <!-- 2. Configure SystemJS -->
-    <script>
-      System.config({
-        packages: {
-          app: {
-            format: 'register',
-            defaultExtension: 'js'
-          }
-        }
-      });
-      System.import('app/boot')
-            .then(null, console.error.bind(console));
-    </script>
+  <!-- 1. Load libraries -->
+  <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="node_modules/rxjs/bundles/Rx.js"></script>
+  <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="node_modules/angular2/bundles/router.dev.js"></script>
 
-  </head>
+  <!-- 2. Configure SystemJS -->
+  <script>
+  System.config({
+    packages: {
+      app: {
+        format: 'register',
+        defaultExtension: 'js'
+      }
+    }
+  });
+  System.import('app/boot')
+  .then(null, console.error.bind(console));
+  </script>
 
-  <!-- 3. Display the application -->
-  <body>
+</head>
+
+<!-- 3. Display the application -->
+<body>
+  <div class="container">
     <my-app>Loading...</my-app>
-  </body>
+  </div>
+</body>
 
 </html>

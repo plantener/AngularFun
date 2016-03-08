@@ -2,6 +2,7 @@ import {Component} from 'angular2/core';
 import {HeroService} from './hero.service';
 import {HeroesComponent} from './heroes.component';
 import {DashboardComponent} from './dashboard.component';
+import {BootstrapComponent} from './bootstrap.component';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 
 @RouteConfig([
@@ -15,6 +16,11 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router'
     path: '/heroes',
     name: 'Heroes',
     component: HeroesComponent
+  },
+  {
+    path: '/bootstrap',
+    name: 'Bootstrap',
+    component: BootstrapComponent
   }
 ])
 
@@ -25,6 +31,7 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router'
     <nav>
     <a [routerLink]="['Dashboard']">Dashboard</a>
     <a [routerLink]="['Heroes']">Heroes</a>
+    <a [routerLink]="['Bootstrap']">Bootstrap</a>
     </nav>
     <router-outlet></router-outlet>
   `,

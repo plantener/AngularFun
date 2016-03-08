@@ -1,5 +1,6 @@
-System.register(['angular2/core', './hero.service', './heroes.component', './dashboard.component', 'angular2/router'], function(exports_1) {
+System.register(['angular2/core', './hero.service', './heroes.component', './dashboard.component', './bootstrap.component', 'angular2/router'], function(exports_1, context_1) {
     "use strict";
+    var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9,7 +10,7 @@ System.register(['angular2/core', './hero.service', './heroes.component', './das
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, hero_service_1, heroes_component_1, dashboard_component_1, router_1;
+    var core_1, hero_service_1, heroes_component_1, dashboard_component_1, bootstrap_component_1, router_1;
     var AppComponent;
     return {
         setters:[
@@ -24,6 +25,9 @@ System.register(['angular2/core', './hero.service', './heroes.component', './das
             },
             function (dashboard_component_1_1) {
                 dashboard_component_1 = dashboard_component_1_1;
+            },
+            function (bootstrap_component_1_1) {
+                bootstrap_component_1 = bootstrap_component_1_1;
             },
             function (router_1_1) {
                 router_1 = router_1_1;
@@ -45,11 +49,16 @@ System.register(['angular2/core', './hero.service', './heroes.component', './das
                             path: '/heroes',
                             name: 'Heroes',
                             component: heroes_component_1.HeroesComponent
+                        },
+                        {
+                            path: '/bootstrap',
+                            name: 'Bootstrap',
+                            component: bootstrap_component_1.BootstrapComponent
                         }
                     ]),
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <h1>{{title}}</h1>\n    <nav>\n    <a [routerLink]=\"['Dashboard']\">Dashboard</a>\n    <a [routerLink]=\"['Heroes']\">Heroes</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
+                        template: "\n    <h1>{{title}}</h1>\n    <nav>\n    <a [routerLink]=\"['Dashboard']\">Dashboard</a>\n    <a [routerLink]=\"['Heroes']\">Heroes</a>\n    <a [routerLink]=\"['Bootstrap']\">Bootstrap</a>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [
                             router_1.ROUTER_PROVIDERS,
