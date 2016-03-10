@@ -1,10 +1,22 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <base href="/"> <!-- Used to support pustState (html5 style URL) -->
   <title>Angular 2 Tour-of-heroes</title>
 
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+  <!--Landing Page theme-->
+  <link rel="stylesheet" href="app/shared/styles.css" />
+  <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  <script src="app/shared/scripts.js"></script>
 
   <!-- 1. Load libraries -->
   <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
@@ -31,9 +43,7 @@
 
 <!-- 3. Display the application -->
 <body>
-  <div class="container">
     <my-app>Loading...</my-app>
-  </div>
 </body>
 
 </html>

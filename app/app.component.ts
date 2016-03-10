@@ -28,11 +28,11 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router'
   selector: 'my-app',
   template: `
     <h1>{{title}}</h1>
-    <nav>
+    <!-- <nav>
     <a [routerLink]="['Dashboard']">Dashboard</a>
     <a [routerLink]="['Heroes']">Heroes</a>
     <a [routerLink]="['Bootstrap']">Bootstrap</a>
-    </nav>
+    </nav> -->
     <router-outlet></router-outlet>
   `,
   directives: [ROUTER_DIRECTIVES],
