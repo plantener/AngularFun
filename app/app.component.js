@@ -1,6 +1,4 @@
-System.register(['angular2/core', './hero.service', './heroes.component', './dashboard.component', './bootstrap.component', 'angular2/router'], function(exports_1, context_1) {
-    "use strict";
-    var __moduleName = context_1 && context_1.id;
+System.register(['angular2/core', './hero.service', './heroes.component', './dashboard.component', './bootstrap.component', 'angular2/router'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,7 +56,7 @@ System.register(['angular2/core', './hero.service', './heroes.component', './das
                     ]),
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <h1>{{title}}</h1>\n    <!-- <nav>\n    <a [routerLink]=\"['Dashboard']\">Dashboard</a>\n    <a [routerLink]=\"['Heroes']\">Heroes</a>\n    <a [routerLink]=\"['Bootstrap']\">Bootstrap</a>\n    </nav> -->\n    <router-outlet></router-outlet>\n  ",
+                        template: "\n  <!--  <h1>{{title}}</h1>\n     <nav>\n    <a [routerLink]=\"['Dashboard']\">Dashboard</a>\n    <a [routerLink]=\"['Heroes']\">Heroes</a>\n    <a [routerLink]=\"['Bootstrap']\">Bootstrap</a>\n    </nav> -->\n    <router-outlet></router-outlet>\n  ",
                         directives: [router_1.ROUTER_DIRECTIVES],
                         providers: [
                             router_1.ROUTER_PROVIDERS,
@@ -68,7 +66,7 @@ System.register(['angular2/core', './hero.service', './heroes.component', './das
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
                 return AppComponent;
-            }());
+            })();
             exports_1("AppComponent", AppComponent);
         }
     }

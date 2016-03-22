@@ -27,8 +27,8 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router'
 @Component({
   selector: 'my-app',
   template: `
-    <h1>{{title}}</h1>
-    <!-- <nav>
+  <!--  <h1>{{title}}</h1>
+     <nav>
     <a [routerLink]="['Dashboard']">Dashboard</a>
     <a [routerLink]="['Heroes']">Heroes</a>
     <a [routerLink]="['Bootstrap']">Bootstrap</a>
