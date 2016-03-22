@@ -176,7 +176,7 @@ footer {
 
     .navbar-header > .navbar-brand {
         color: rgba(255,255,255,0.7);
-        padding: 19px;
+        /*padding: 19px;*/
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
